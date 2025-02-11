@@ -35,19 +35,35 @@ frutas.forEach((elemento,indice,arr)=>{
 
 //Añadir un un elemento al final de un Array
 let nuevaLongitud = frutas.push('Mango'); // Esto añade Mango al final del array
-console.table(frutas);
+console.table(nuevaLongitud,frutas);
 frutas.push('Granadilla');
 console.table(frutas);
 
 //Eliminar el ultimo elemento de un array
 let eliminaUltimo = frutas.pop();
-console.table(frutas);
-console.log('Elemento Eliminado: ',eliminaUltimo);
+console.log({eliminaUltimo,frutas});
 
 //Añadir un elemento al principio de un array
 let adicionaFruta = frutas.unshift('Pera');
 console.table(frutas);
 console.log('Fruta Adicionada: ', adicionaFruta);
+
+//Elimina el primer elemento de un array
+let eliminaPrimerElemento = frutas.shift();//Elimina Pera del inicio del array
+console.table(frutas);
+console.log('Elmento Eliminado:',eliminaPrimerElemento);
+
+
+//Eliminar un elemento mediante su posicion
+let pos = 1;
+console.log(frutas);
+let frutaBorrada = frutas.splice(pos,2);
+console.log({frutaBorrada, frutas});
+
+
+//Encontrar un elemento mediante su posicion medinte indexOf()
+let posFruta = frutas.indexOf('Uva');
+console.log({posFruta,frutas});
 
 
 
