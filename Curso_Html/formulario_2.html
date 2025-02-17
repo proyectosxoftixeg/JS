@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario_2</title>
+</head>
+<body>
+    <h1>Registro de Usuarios</h1> <br><br>
+
+    <form action="#">
+        <fieldset>
+            <legend>Informacion Personal</legend>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Carlos Andres" required><br><br>
+            <label for="apellido">apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Martinez" required> <br><br>
+            <label for="fechaNacimiento">Fecha de Nacimiento</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Genero</legend>
+            <input type="radio" id="masculino" name="masculino" value="masculino" required>
+            <label for="masculino">Masculino</label> <br> <br>
+            <input type="radio" id="femenino" name="femenino" value="femenino" required>
+            <label for="femenino">Femenino</label><br><br>
+            <input type="radio" id="otro" name="otro" value="otro" required>
+            <label for="otro">Otro</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informacion de Contacto</legend>
+            <label for="email">Correo Electronico</label>
+            <input type="email" id="email" name="email" placeholder="usuario@micorreo.com" required><br><br>
+            <label for="telefono">Numero Telefonico</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="315678901" required> <br><br>
+            <textarea name="direccion" id="direccion" rows="4" cols="38" placeholder="Avenida Chile # 45 - 67 Esquina"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion de Cuenta</legend>
+                <label for="usuario">Nombre de Usuario de Acceso</label>
+                <input type="text" id="usuario" name="usuario" placeholder="andrewzarate" required> <br><br>
+                <label for="clave">Constraseña</label>
+                <input type="password" id="clave" name="clave" required> <br><br>
+                <label for="confirmeClave">Confirmar Contraseña</label>
+                <input type="password" id="confirmeClave" name="confirmeClave" required> <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label for="colorFavorito">Seleccione su color Favorito</label>
+                <select name="colorFavorito" id="colorFavorito">
+                    <option value="Rojo">Rojo</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Amarillo">Amarillo</option>
+                </select><br><br>
+
+                <input type="checkbox" id="aceptarTerminos" name="aceptarTerminos" required>
+                <label for="aceptarTerminos">Aceptar Terminos y Condiciones</label> <br><br>
+                <input type="submit" value="Registrarse">
+            </fieldset>
+                
+    </form>
+
+
+</body>
+</html>
