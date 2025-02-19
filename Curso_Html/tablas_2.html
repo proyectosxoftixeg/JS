@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Libro</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        .portada {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .portada h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .portada h2 {
+            font-size: 1.5em;
+            color: #666;
+        }
+        .indice {
+            margin-bottom: 40px;
+        }
+        .indice ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .indice ul li {
+            margin: 10px 0;
+        }
+        .capitulo {
+            margin-bottom: 40px;
+        }
+        .capitulo h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        .seccion {
+            margin-bottom: 20px;
+        }
+        .seccion h3 {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Portada -->
+    <div class="portada">
+        <h1>El Título del Libro</h1>
+        <h2>Autor del Libro</h2>
+    </div>
+
+    <!-- Índice -->
+    <div class="indice">
+        <h2>Índice</h2>
+        <ul>
+            <li><a href="#capitulo1">Capítulo 1: Introducción</a></li>
+            <li><a href="#capitulo2">Capítulo 2: Desarrollo</a></li>
+        </ul>
+    </div>
+
+    <!-- Capítulo 1 -->
+    <div class="capitulo" id="capitulo1">
+        <h2>Capítulo 1: Introducción</h2>
+        <div class="seccion">
+            <h3>Sección 1.1: Bienvenida</h3>
+            <p>Este es el contenido de la sección de bienvenida. Aquí puedes introducir el tema del libro y dar una visión general de lo que el lector puede esperar.</p>
+        </div>
+        <div class="seccion">
+            <h3>Sección 1.2: Objetivos</h3>
+            <p>En esta sección, se describen los objetivos principales del libro y lo que se espera que el lector aprenda al finalizar la lectura.</p>
+        </div>
+    </div>
+
+    <!-- Capítulo 2 -->
+    <div class="capitulo" id="capitulo2">
+        <h2>Capítulo 2: Desarrollo</h2>
+        <div class="seccion">
+            <h3>Sección 2.1: Conceptos Básicos</h3>
+            <p>Aquí se explican los conceptos básicos necesarios para entender el contenido del libro. Incluye definiciones y ejemplos.</p>
+        </div>
+        <div class="seccion">
+            <h3>Sección 2.2: Aplicaciones Prácticas</h3>
+            <p>En esta sección, se presentan aplicaciones prácticas de los conceptos discutidos en el capítulo. Se incluyen ejemplos y casos de estudio.</p>
+        </div>
+    </div>
+
+</body>
+</html>
