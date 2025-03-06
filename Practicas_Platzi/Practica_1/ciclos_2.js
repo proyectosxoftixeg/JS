@@ -47,5 +47,5 @@ while(triunfos < 3 && perdidas < 3){
     }
 }
 
-alert("GANASTE: " + triunfos + ("Veces. Perdiste: " + perdidas + "Veces"));
+alert("GANASTE: " + triunfos + (" Veces. Perdiste: " + perdidas + " Veces"));
 
