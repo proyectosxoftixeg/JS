@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Barack - Academia y Tienda de Tenis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de Navegación -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="https://via.placeholder.com/50" alt="Tennis Barack Logo" class="logo">
+            <h1>Tennis Barack</h1>
+        </div>
+        <div class="nav-links">
+            <a href="#inicio">Inicio</a>
+            <a href="#productos">Productos</a>
+            <a href="#academia">Academia</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Bienvenido a Tennis Barack</h1>
+            <p>Tu academia de tenis y tienda deportiva de confianza</p>
+            <a href="#productos" class="cta-button">Ver Productos</a>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="products-section" id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="products-filter">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="raquetas">Raquetas</button>
+            <button class="filter-btn" data-category="ropa">Ropa</button>
+            <button class="filter-btn" data-category="accesorios">Accesorios</button>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            <!-- Los productos se cargarán dinámicamente con JavaScript -->
+        </div>
+    </section>
+
+    <!-- Sección de Academia -->
+    <section class="academy-section" id="academia">
+        <h2>Nuestra Academia</h2>
+        <div class="academy-features">
+            <div class="feature-card">
+                <i class="fas fa-trophy"></i>
+                <h3>Instructores Profesionales</h3>
+                <p>Aprende con los mejores entrenadores certificados</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-users"></i>
+                <h3>Clases Grupales</h3>
+                <p>Grupos reducidos para mejor atención</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-child"></i>
+                <h3>Clases para Niños</h3>
+                <p>Programas especiales para todas las edades</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-section" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Av. Principal #123, Ciudad</p>
+                <p><i class="fas fa-phone"></i> +123 456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@tennisbarack.com</p>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Mensaje" required></textarea>
+                <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tennis Barack</h3>
+                <p>Tu academia de tenis de confianza desde 2024</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tennis Barack. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Carrito de Compras Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Carrito de Compras</h2>
+            <div class="cart-items" id="cartItems">
+                <!-- Los items del carrito se cargarán dinámicamente -->
+            </div>
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <button class="checkout-btn">Proceder al Pago</button>
+            <button class="close-cart-btn" id="closeCart">&times;</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
