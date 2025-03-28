@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #210F37;
+}
+
+
+.titulo{
+    color:whitesmoke;
+    font-size: 32px;
+    width: 310px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    
+}
+.subtitulo{
+    color: whitesmoke;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+}
+#elige-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.tajeta-de-mokepon{
+  width: 180px;
+  height: 100px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 10px;
+  border: 1px solid pink;
+  border-radius: 20px;
+  background: #4F1C51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tajeta-de-mokepon img{
+    width: 80px;
+}
+
+.tajeta-de-mokepon p{
+    color: white;
+}
+
+.btnMascota{
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-top: 30px;
+    
+}
+
+.tarjetas{
+    display: flex;
+    gap: 10px;
+}
+
+input{
+    display: none;
+    
+}
+
